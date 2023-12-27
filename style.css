@@ -1,0 +1,44 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .nav-links {
+    @apply flex gap-4 justify-center hover:text-blue-400  items-center xl:justify-start ease-in-out duration-200 font-bold text-white;
+  }
+  nav .icon {
+    @apply xl:block hidden;
+  }
+}
+
+@layer utilities {
+  /* width */
+  ::-webkit-scrollbar,
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #fff;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 2px solid #fff;
+  }
+
+  /* Track */
+  .dark ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+
+  /* Handle */
+  .dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border: 2px solid #374151;
+  }
+}
